@@ -1,0 +1,27 @@
+{
+  "name": "sample-node",
+  "version": "1.0.0",
+  "description": "Reference Node.js REST API showcasing design patterns",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --runInBand",
+    "test:watch": "node --experimental-vm-modules node_modules/.bin/jest --watch --runInBand"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.22.0",
+    "supertest": "^7.0.0"
+  }
+}
